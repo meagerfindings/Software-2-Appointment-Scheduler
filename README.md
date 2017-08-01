@@ -561,39 +561,36 @@ Randal Munroe
 
 ### Login Prompt
 
-![Login Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/login.png)
+![Login Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/login.png)
 
 #### Login in Spanish
 
-![Spanish Login Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/login_spanish.png)
+![Spanish Login Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/login_spanish.png)
 
 #### Login Error in Spanish
 
-![Spanish Login Error](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/login_spanish_error.png)
+![Spanish Login Error](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/login_spanish_error.png)
 
 ### Main Appointment Screen
 
-![Main Appointment Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/main_screen.png)
+![Main Appointment Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/main_screen.png)
 
 ### Add Appointment
 
-![Add Appointment Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/add_appointment.png)
+![Add Appointment Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/add_appointment.png)
 
 ### Modify Appointment
 
-![Modify Appointment Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/modify_appointment.png)
+![Modify Appointment Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/modify_appointment.png)
 
 ### View Appointment Details
 
-![View Appointment Details Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/view_appointment_details.png)
+![View Appointment Details Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/view_appointment_details.png)
 
 ### Main Customer Screen
 
-![Customers Main Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/customers.png)
+![Customers Main Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/customers.png)
 
 ### Modify Customer
 
-![Modify Customer Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/modify_customer.png)
-
-[[https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/modify_customer.png|modifycustomerscreen]]
-
+![Modify Customer Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/Images/modify_customer.png)

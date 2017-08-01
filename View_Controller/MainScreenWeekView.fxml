@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="GridPane" maxHeight="778.0" maxWidth="1099.0" minHeight="777.0" minWidth="1099.0" prefHeight="778.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainScreenWeekViewController">
+  <columnConstraints>
+      <ColumnConstraints maxWidth="162.0" minWidth="119.0" prefWidth="160.0" />
+      <ColumnConstraints maxWidth="137.0" minWidth="90.0" prefWidth="125.0" />
+      <ColumnConstraints maxWidth="142.0" minWidth="93.0" prefWidth="127.0" />
+      <ColumnConstraints maxWidth="171.66668701171875" minWidth="17.0" prefWidth="23.0" />
+      <ColumnConstraints maxWidth="163.0" minWidth="120.0" prefWidth="150.0" />
+      <ColumnConstraints maxWidth="169.0" minWidth="120.0" prefWidth="161.0" />
+      <ColumnConstraints maxWidth="180.0" minWidth="132.0" prefWidth="177.0" />
+      <ColumnConstraints maxWidth="184.0" minWidth="137.0" prefWidth="176.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="141.00000762939453" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="165.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="282.0" minHeight="131.66665649414062" prefHeight="282.0" vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+    <RowConstraints vgrow="SOMETIMES" />
+    <RowConstraints vgrow="SOMETIMES" />
+    <RowConstraints vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label contentDisplay="CENTER" text="Consulting Scheduling Center" textFill="#0067b5" GridPane.columnSpan="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Helvetica Bold" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="allAppointmentsView" mnemonicParsing="false" onAction="#viewAllAppointments" text="All Appointments" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+         <toggleGroup>
+            <ToggleGroup fx:id="viewToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="viewWeekToggle" mnemonicParsing="false" onAction="#viewByWeek" selected="true" text="Week View" toggleGroup="$viewToggleGroup" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </RadioButton>
+      <RadioButton fx:id="viewMonthToggle" mnemonicParsing="false" onAction="#viewByMonth" text="Month View" toggleGroup="$viewToggleGroup" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </RadioButton>
+      <Button fx:id="addAppointmentButton" defaultButton="true" mnemonicParsing="false" onAction="#addAppointment" text="Add Appointment" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button fx:id="deleteAppointmentButton" mnemonicParsing="false" onAction="#deleteAppointment" text="Delete Appointment" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin></Button>
+      <Button fx:id="modifyAppointmentButton" mnemonicParsing="false" onAction="#modifyAppointment" text="Modify Appointment" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin></Button>
+      <Button fx:id="viewAppointmentButton" mnemonicParsing="false" onAction="#viewAppointment" text="View Appointment" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin></Button>
+      <TableView fx:id="appointmentDataTable" GridPane.columnSpan="8" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="5" GridPane.valignment="CENTER">
+        <columns>
+            <TableColumn fx:id="columnDate" prefWidth="91.0" sortable="false" text="Date" />
+          <TableColumn fx:id="columnStart" prefWidth="96.0" sortable="false" text="Start Time" />
+          <TableColumn fx:id="columnEnd" prefWidth="83.0" sortable="false" text="End Time" />
+            <TableColumn fx:id="columnMeetingTitle" minWidth="0.0" prefWidth="151.0" text="Title" />
+            <TableColumn fx:id="columnCusName" prefWidth="118.0" text="Customer Name" />
+            <TableColumn fx:id="columnCusPhone" minWidth="1.666656494140625" prefWidth="167.0" text="Customer Phone" />
+            <TableColumn fx:id="columnMeetingLocation" minWidth="0.0" prefWidth="143.0" text="Location" />
+            <TableColumn fx:id="columnMeetingDescription" minWidth="0.0" prefWidth="249.0" text="Description" />
+        </columns>
+      </TableView>
+      <MenuButton fx:id="exportReportsDropdown" mnemonicParsing="false" popupSide="TOP" text="Export Reports" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+        <items>
+            <MenuItem fx:id="reportClientAppointments" mnemonicParsing="false" onAction="#exportClientAppointmentReport" text="Appointments by Client" />
+          <MenuItem fx:id="reportAppointmentByMonth" mnemonicParsing="false" onAction="#exportAppointmentByMonthReport" text="Appointment Types by Month" />
+          <MenuItem mnemonicParsing="false" onAction="#exportConsultantSchedulesReport" text="Consultant Schedules" />
+        </items>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </MenuButton>
+      <Button fx:id="logOffButton" cancelButton="true" mnemonicParsing="false" onAction="#logOff" text="Log Off" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="5.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>

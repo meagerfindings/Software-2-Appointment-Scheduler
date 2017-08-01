@@ -594,3 +594,6 @@ Randal Munroe
 ### Modify Customer
 
 ![Modify Customer Screen](https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/modify_customer.png)
+
+[[https://github.com/meagerfindings/Software-2-Appointment-Scheduler/blob/master/images/modify_customer.png|modifycustomerscreen]]
+
